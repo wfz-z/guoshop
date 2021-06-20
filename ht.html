@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="all.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <title>商务管理后台</title>
+    </head>
+ <body>  
+     <!-- 导航栏，设置黑色背景，导航黑色 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <span style="color:green; text-align: top;">芭芭农场</span></a>
+        <a class="nav-link " href="index.html">首页</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav d-flex">
+              <a class="nav-item nav-link active" href="ht.html"></a>
+          </div>
+        </div>
+        <div class="nav-item">
+            <form class="form-inline my-2 my-lg-0 justify-content-lg-end">
+                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#loginModal">登录</a>&nbsp;
+                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#registerModal">注册</a>
+              </form>
+        </div>
+      </nav>
+      <div class="container-fluid mt-4 main">
+          <div class="row">
+              <div class="col-lg-3 col-6">
+                  <div class="card rounded-0 h-100">
+                      <div class="card-body d-flex align-items-center">
+                          <div class="far fa-money-bill-alt fa-4x text-success mr-2"></div>
+
+                          <div class="text-center w-100">
+                              <div class="h5">今日营收</div>
+                              <div class="h3">888元</div>
+                          </div>
+                      </div>
+                  </div>
+           </div>
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex align-items-center">
+                        <div class="fas fa-user-friends fa-4x text-primary mr-2"></div>
+
+                        <div class="text-center w-100">
+                            <h5>会员增加</h5>
+                            <h3 class="display-4">200人</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex">
+                        <div class="fas fa-id-card fa-4x text-primary mr-2"></div>
+
+                        <div class="text-center w-100">
+                            <h5>订单数</h5>
+                            <h3 class="display-4">50单</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="card rounded-0 h-100">
+                    <div class="card-body d-flex">
+                        <div class="fas fa-box fa-4x text-primary mr-2"></div>
+
+                        <div class="text-center w-100">
+                            <h5>待出货数</h5>
+                            <h3 class="display-4">18件</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <section class="container-fluid mt-4">
+          <div class="row mb-5">
+              <div class="col-lg-4">
+                  <div class="card h-100">
+                      <div class="card-body d-flex align-items-center">
+                          <div class="text-center w-100">
+                              <div class="h5">目前在线人数</div>
+                              <div class="h3" style="font-size: 60px;">70人</div>
+                              <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">桌椅</div>
+                                  <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">行动装置</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-8">
+                  <div class="card h-100">
+                      <div class="card header bg-dark text-light" style="font-weight: bold;">最近新增订单</div>
+                      <div class="card body">
+                          <div class="text-right">
+                              <a href="#" class="btn btn-outline-success">订单管理</a>
+                          </div>
+                          <table>
+                              <thead>
+                                  <tr>
+                                      <th scope="col">来源</th>
+                                      <th scope="col">姓名</th>
+                                      <th scope="col">货品</th>
+                                      <th scope="col" class="text-right pr-5">价格</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>芭芭农场</td>
+                                      <td>何女士</td>
+                                      <td>西瓜</td>
+                                      <td class="text-right">200</td>
+                                  </tr>
+                                  <tr>
+                                    <td>淘宝</td>
+                                    <td>芒果</td>
+                                    <td>猕猴桃</td>
+                                    <td class="text-right">150</td>
+                                </tr>
+                                <tr>
+                                    <td>京东</td>
+                                    <td>刘先生</td>
+                                    <td>哈密瓜</td>
+                                    <td class="text-right">300</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="text-right">总收入</td>
+                                    <td class="text-right">650元</td>
+                                </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <div class="row mb-4">
+          <section class="col-lg-8">
+              <div class="crad rounded-0">
+                  <div class="card-header">
+                      用户来源
+                  </div>
+                  <div class="card-body">
+                      <div class="row">
+                          <div class="col-lg-8">
+                              <canvas id="barCanvas"></canvas>
+                          </div>
+                          <div class="col-lg-4">
+                              <h4>Detail</h4>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eius consectetur ut quaerat. Deserunt eaque aspernatur libero, ab harum a non autem sint fugiat, soluta pariatur vitae distinctio, ratione sequi.</p>
+                              <h6 class="mt-3">Google</h6>
+                              <div class="progress">
+                                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section class="col-lg-4">
+              <div class="card h-100">
+                  <div class="card-header">
+                      小标题
+                  </div>
+                  <div class="card-body d-flex align-items-center">
+                      <canvas class="chart-item"></canvas>
+                  </div>
+              </div>
+          </section>
+      </div>
+      <div class="card rounded-0">
+          <div class="card-header">
+              表头
+          </div>
+          <div class="card-body">
+              <div class="d-flex">
+                  <div class="form-inline">
+                      <div class="form-group">
+                          <label for="month" class="sr-only">月份</label>
+                          <select name="" id="month" class="form-control form-control-sm">
+                              <option value="9">9月</option>
+                              <option value="10">10月</option>
+                              <option value="11">11月</option>
+                              <option value="12">12月</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="ml-auto">
+                      <a href="#" class="btn btn-outline-secondary btn-sm">下载报表</a>
+                      <a href="#" class="btn btn-outline-secondary btn-sm">订单管理</a>
+                  </div>
+              </div>
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th width="50">日期</th>
+                          <th>订单数</th>
+                          <th>退货数</th>
+                          <th>出货数</th>
+                          <th width="15%">有问题货品</th>
+                          <th width="150">营业额</th>
+                          <th width="150">净利润</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">9/1</th>
+                          <td>300</td>
+                          <td>1</td>
+                          <td>250</td>
+                          <td>3</td>
+                          <td class="text-right">2,560</td>
+                          <td class="text-right">1,690</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9/2</th>
+                        <td>200</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>6</td>
+                        <td class="text-right">9,060</td>
+                        <td class="text-right">7,890</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9/3</th>
+                        <td>560</td>
+                        <td>6</td>
+                        <td>345</td>
+                        <td>6</td>
+                        <td class="text-right">2,060</td>
+                        <td class="text-right">9,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9/4</th>
+                        <td>980</td>
+                        <td>34</td>
+                        <td>560</td>
+                        <td>7</td>
+                        <td class="text-right">2,000</td>
+                        <td class="text-right">1,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9/5</th>
+                        <td>400</td>
+                        <td>3</td>
+                        <td>238</td>
+                        <td>4</td>
+                        <td class="text-right">4,000</td>
+                        <td class="text-right">6,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9/6</th>
+                        <td>600</td>
+                        <td>15</td>
+                        <td>50</td>
+                        <td>9</td>
+                        <td class="text-right">8,000</td>
+                        <td class="text-right">1,000</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <td colspan="6" class="text-right">月总营收</td>
+                          <td class="text-right">30,090</td>
+                      </tr>
+                      <tr>
+                        <td colspan="6" class="text-right">月总净利</td>
+                        <td class="text-right">25,090</td>
+                    </tr>
+                  </tfoot>
+              </table>
+          </div>
+      </div>
+
+      <!-- 网页尾部 -->
+      <footer class="bg-light trxt-muted py-3">
+        <div class="container">
+            <ul class="list-line text-center">
+                <li class="list-inline-item"> Copright&copy; 2021 芭芭农场.All Rights Reserved.</li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-weixin" aria-hidden="true"></i>微信
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-weibo" aria-hidden="true"></i>微博
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">About</a>
+                </li>
+            </ul>
+            <p class="text-center"> Made with Bootstrap</p>
+        </div>
+    </footer>
+
+        <!-- 登录modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title" id="exampleModalLabel">登录</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">账号</label>
+                      <input type="text" class="form-control" id="exampleuser" placeholder="请输入账号" >
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">密码</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">记住密码</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">还没注册账号？注册</a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+              <button type="button" class="btn btn-primary">登录</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- 注册modal -->
+      <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                  <h5 class="modal-title" id="exampleModalLabel">注册</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                          <svg t="1623673532845" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2516" width="100" height="100"><path d="M722.6 645.295c17.497-26.999 9.793-63.072-17.206-80.567-21.997-14.255-45.104-26.406-69.045-36.377 69.66-51.387 114.937-134.006 114.937-227.013 0-155.467-126.483-281.951-281.951-281.951s-281.951 126.483-281.951 281.951c0 92.95 45.223 175.527 114.811 226.919-51.763 21.557-99.309 53.261-140.153 94.103-82.080 82.080-127.284 191.213-127.284 307.292 0 32.174 26.082 58.254 58.254 58.254s58.254-26.080 58.254-58.254c0-175.385 142.685-318.068 318.068-318.068 61.579 0 121.298 17.606 172.699 50.915 27.002 17.498 63.074 9.793 80.567-17.206zM469.334 135.897c91.225 0 165.442 74.218 165.442 165.442s-74.218 165.442-165.442 165.442c-91.225 0-165.442-74.217-165.442-165.442s74.218-165.442 165.442-165.442z" p-id="2517"></path><path d="M926.63 743.197h-66.992v-66.992c0-32.174-26.080-58.254-58.254-58.254s-58.254 26.080-58.254 58.254v66.992h-66.992c-32.174 0-58.254 26.080-58.254 58.254s26.080 58.254 58.254 58.254h66.992v66.992c0 32.174 26.080 58.254 58.254 58.254s58.254-26.080 58.254-58.254v-66.992h66.992c32.174 0 58.254-26.080 58.254-58.254s-26.080-58.254-58.254-58.254z" p-id="2518"></path></svg>
+                        </div>
+                        <div class="col-md-9">
+                              <h4>注册账号</h4>
+                          <form>
+                              <div class="form-group">
+                                  <label>手机</label>
+                                  <input type="text" class="form-control" placeholder="请输入手机号">
+                              </div>
+                              <div class="form-group">
+                                  <label>验证码</label>
+                                  <div class="input-group">
+                                      <input type="text" class="form-control" placeholder="输入验证码..">
+                                      <div class="input-group-btn">
+                                          <button class="btn btn-success">发送验证码</button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-group text-center">
+                                  <a href="#">忘记密码？</a>
+                              </div>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">切换到登录</a>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                  <button type="button" class="btn btn-primary">注册</button>
+                </div>
+              </div>
+            </div>
+      </div>
+
+ 
+ <!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/ulg/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="all.js"></script>
+
+<!-- 表格脚本 -->
+<script>
+ $(document).ready(function () {
+     $('[data-toggle="tooltip"]').tooltip();
+
+     // 編輯的 Modal 事件
+     $('#editModal').on('show.bs.modal', function (event) {
+         var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+         var title = button.data('title') // 使用 data-* 來取得特定內容
+
+         var modal = $(this)
+         modal.find('.modal-title').text(title) // 寫入資料
+     });
+
+     $('#removeModal').on('show.bs.modal', function (event) {
+         var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+         var title = button.data('title') // 使用 data-* 來取得特定內容
+
+         var modal = $(this)
+         modal.find('.modal-title').text('確認' + title) // 寫入資料
+     })
+ });
+</script>
+<script>
+ window.chartColors = {
+     red: 'rgb(255, 99, 132)',
+     orange: 'rgb(255, 159, 64)',
+     yellow: 'rgb(255, 205, 86)',
+     green: 'rgb(75, 192, 192)',
+     blue: 'rgb(54, 162, 235)',
+     purple: 'rgb(153, 102, 255)',
+     grey: 'rgb(201, 203, 207)'
+ };
+
+ var randomScalingFactor = function () {
+     return Math.round(Math.random() * 100);
+ };
+
+ var config = {
+     type: 'pie',
+     data: {
+         datasets: [{
+             data: [
+                 randomScalingFactor(),
+                 randomScalingFactor(),
+                 randomScalingFactor(),
+                 randomScalingFactor(),
+                 randomScalingFactor(),
+             ],
+             backgroundColor: [
+                 window.chartColors.red,
+                 window.chartColors.orange,
+                 window.chartColors.yellow,
+                 window.chartColors.green,
+                 window.chartColors.blue,
+             ],
+             label: 'Dataset 1'
+         }],
+         labels: [
+             "Red",
+             "Orange",
+             "Yellow",
+             "Green",
+             "Blue"
+         ]
+     },
+     options: {
+         responsive: true
+     }
+ };
+
+ // bar
+ var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+ var colors = Chart.helpers.color;
+ var barChartData = {
+     labels: ["January", "February", "March", "April", "May", "June", "July"],
+     datasets: [{
+         label: 'Dataset 1',
+         backgroundColor: colors(window.chartColors.red).alpha(0.5).rgbString(),
+         borderColor: window.chartColors.red,
+         borderWidth: 1,
+         data: [
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor()
+         ]
+     }, {
+         label: 'Dataset 2',
+         backgroundColor: colors(window.chartColors.blue).alpha(0.5).rgbString(),
+         borderColor: window.chartColors.blue,
+         borderWidth: 1,
+         data: [
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor(),
+             randomScalingFactor()
+         ]
+     }]
+
+ };
+
+ window.onload = function () {
+     // pie
+     document.querySelectorAll('.chart-item').forEach(function (item) {
+         config.data.datasets.forEach(function (dataset) {
+             dataset.data = dataset.data.map(function () {
+                 return randomScalingFactor();
+             });
+         });
+         var ctx = item.getContext("2d");
+         window.myPie = new Chart(ctx, config);
+     })
+
+     // bar
+     var barCtx = document.getElementById("barCanvas").getContext("2d");
+     window.myBar = new Chart(barCtx, {
+         type: 'bar',
+         data: barChartData,
+         options: {
+             responsive: true,
+             legend: {
+                 position: 'top',
+             },
+             title: {
+                 display: true,
+                 text: 'Chart.js Bar Chart'
+             }
+         }
+     });
+
+ };
+</script>
+</body>
+</html>
+
+
+
+
+
+

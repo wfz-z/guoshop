@@ -1,0 +1,45 @@
+.body{
+    padding-top: 50px;
+}
+.header-carousel-item{
+    height: 450px;
+}
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-caption{
+    background-color: rgba(0, 0,0, .6);
+}
+
+.dropdown>button:focus{
+    box-shadow: 0 0 0 0rem !important;
+}
+.btn-cart{
+    background-color: transparent;
+    position: relative;
+}
+.dropdown .btn-cart .badge{
+    position:absolute;
+    top: -1px;
+    right: -1px;
+}
+.dropdown-menu-right{
+    right: 0px;
+    left: auto;
+}
+/* 设置jumbotron-bg背景为图片，居中，最小高度为400px */
+.jumbotron-bg{
+    background-image: url("../tp/13.JPG");
+    background-size: cover;
+    background-position: center center;
+    min-height:400px;
+}
+.bg-lighter{
+    background-color: rgba(255, 255, 255, .65);
+}
+.box-shadow{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .16);
+    transition: box-shadow .3s;
+
+}

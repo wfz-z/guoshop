@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- 网页标题 -->
+    <title>芭芭农场</title>
+    <!-- 锚标签，返回顶部 -->
+    <a id="top"></a>
+  </head>
+  <body>
+    <!-- 导航栏设置导航bg-light背景为白色，navbar-expand-md设置响应式桌面， -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- collapse navbar-collapse通过父断点来分组和隐藏导航栏内容 -->
+                <div class="nav-item collapse navbar-collapse">
+                <a class="navbar-brand" href="#">
+                    <!-- 加入css调整文字颜色为绿色 -->
+                  <span style="color:green; text-align: top;">芭芭农场</span></a>
+                  <a class="nav-link " href="index.html">首页</a>
+                  <a class="nav-link" href="ht.html">商家后台</a>
+                </div>
+                    <!-- ustify-content-center，居中对齐 -->
+                    <div class="nav-item collapse navbar-collapse justify-content-center">
+                        <form class="form-inline ">
+                            <input class="form-control  mr-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">查找</button>
+                        </form>
+                    </div>
+                    <div class="nav-item">
+                        <form class="form-inline my-2 my-lg-0 justify-content-lg-end">
+                            <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#loginModal">登录</a>&nbsp;
+                            <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#registerModal">注册</a>
+                          </form>
+                    </div>
+                    <div class="nav-item">
+                        <!-- dropdown设置下拉菜单, ml-auto元素居右-->
+                        <div class="dropdown ml-auto">
+                            <button class="btn btn-sm btn-cart" type="button" 
+                            id="dropdownMenuButton" data-toggle="dropdown" 
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-shopping-cart text-dark fa-2x" aria-hidden="true"></i>
+                            <!--badge badge-pill设置药丸形状徽章  -->
+                            <span class="badge badge-pill badge-danger">1</span>
+                            </button>我的购物车
+                            <div class="dropdown-menu dropdown-menu-right p-2" style="min-width:300px;" aria-labelledby="dropdownMenuButton">
+                                <table class="table table-sm">
+                                    <h6 class="mb-3 pt-2">已选择商品</h6>
+                                    <tbody>
+                                        <tr>
+                                            <!-- align-middle text-center设置居中对齐 -->
+                                            <td class="align-middle text-center">
+                                                <a href="#removeModal" class="text-muted" data-toggle="modal" data-target="#removeModal" 
+                                                data-title="删除 水蜜桃 1件" data-backdrop="static">
+                                                    <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                            <td class="align-middle">水蜜桃</td>
+                                            <td class="align-middle">1件</td>
+                                            <td class="align-middle text-right">￥20</td>
+                                        </tr>
+                                    </tbody>
+                                </table>   
+                                <!-- btn-primary按钮颜色蓝色 -->
+                                <a href="xq.html#jiezhan" class="btn btn-primary btn-block">清空购物车</a>
+                            </div>
+                        </div>
+                    </div>  
+                  </ul>       
+      </div>
+    </nav>
+    <!-- jumbotron jumbotron-fluid增加全屏蒙版，jumbotron-bg 设置背景为图片,d-flex弹性布局 -->
+      <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+        <div class="container">
+            <div class="bg-lighter h-100">
+                <!-- display-4设置文本样式4,font-weight-bold加粗字体,居中 -->
+            <h1 class="display-4 font-weight-bold" style="color: red; text-align: center;">新鲜水果，全场五折起，满200减100 ！！！</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--row.col-md-3  col-md-9 按3:9切分屏幕  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- sticky-top实现上划鼠标，导航栏一直固定在顶部左边 -->
+                <div class="list-group sticky-top">
+                    <a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list">
+                        <i class="fas fa-apple-alt mr-2"></i>新品上市
+                    </a>
+                    <a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">
+                        <i class="fas fa-leaf mr-2"></i>进口水果
+                    </a>
+                    <a href="#pane-3" class="list-group-item list-group-item-action" data-toggle="list">
+                        <i class="fas fa-seedling mr-2"></i>国产水果
+                    </a>
+                    <a href="#pane-4" class="list-group-item list-group-item-action" data-toggle="list">
+                        <i class="fas fa-carrot mr-2"></i>水果捞
+                    </a>
+                    <a href="" class="list-group-item list-group-item-action disabled">
+                        <i class="fas fa-lemon mr-2"></i>特价水果
+                    </a>
+                    <a href="#top" class="list-group-item list-group-item-action">
+                        返回顶部
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <!-- tab-pane设置标签面板和标签页 -->
+                    <div class="tab-pane active" id="pane-1">
+                        <a href="xq.html">
+                            <!-- mt-2调整元素之间距离margin，col-md-4 切分,h-100将侧边栏高度设置为100％ -->
+                        <div class="row mt-2 mt-md-4 mb-4">
+                            <div class="col-md-4 mb-4">
+                                <!-- box-shadow向div元素添加阴影，card-img-top置顶图片 -->
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="tp/1.jpg" alt="card image cap">
+                                </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">水蜜桃</h5>
+                                        <p class="card-text">新鲜水蜜桃水果当季蜜桃脆甜大桃子毛桃应季农产品超甜桃 5斤</p>
+                                    </div>
+                                    <!-- bg-white设置背景色为白色，border-top-0规定上边框的宽度0 -->
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="xq.html" class="btn btn-outline-secondary btn-block"> 购买</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <a href="xq.html">
+                                    <img class="card-img-top" 
+                                    src="tp/2.jpg" alt="card image cap"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">猕猴桃</h5>
+                                        <p class="card-text">绿心猕猴桃22个板盒装 单果90-110g 新生鲜水果 健康轻食</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="xq.html" class="btn btn-outline-secondary btn-block"> 购买</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <a href="xq.html">
+                                    <img class="card-img-top" src="tp/4.jpg" alt="card image cap"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">泰国芒果</h5>
+                                        <p class="card-text">泰芒，原装进口，6-10个装</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="xq.html" class="btn btn-outline-secondary btn-block"> 抢购去</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="tp/5.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">哈密瓜</h5>
+                                        <p class="card-text">新疆哈密瓜，保甜，不甜不要钱，大概700-1200g一个</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block disabled" > 缺货</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="tp/7.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">巨峰葡萄</h5>
+                                        <p class="card-text">巨峰葡萄，超级好吃，回味无穷，500g装</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block disabled"> 缺货</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="tp/8.jpg" width="170px" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">金色柠檬</h5>
+                                        <p class="card-text">夏天少不了的柠檬，8-18个装，老少皆宜</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block disabled">缺货</a>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane-2">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="tp/6.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">牛油果</h5>
+                                        <p class="card-text">进口牛油果 5-12个装，实惠爆款</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="xq.html" class="btn btn-outline-secondary btn-block"> 购买</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <a href="xq.html">
+                                    <img class="card-img-top" src="tp/4.jpg" alt="card image cap"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">泰国芒果</h5>
+                                        <p class="card-text">泰芒，原装进口，6-10个装</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="xq.html" class="btn btn-outline-secondary btn-block"> 抢购去</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" 
+                                    src="tp/3.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">樱桃</h5>
+                                        <p class="card-text">进口樱桃好吃 </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                       <a href="xq.html" class="btn btn-outline-secondary btn-block"> 购买</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane-3">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="tp/1.jpg" alt="card image cap">
+                                </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">水蜜桃</h5>
+                                        <p class="card-text">新鲜水蜜桃水果当季蜜桃脆甜大桃子毛桃应季农产品超甜桃 5斤</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="xq.html" class="btn btn-outline-secondary btn-block"> 购买</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" 
+                                    src="tp/2.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">猕猴桃</h5>
+                                        <p class="card-text">绿心猕猴桃22个板盒装 单果90-110g 新生鲜水果 健康轻食</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="xq.html" class="btn btn-outline-secondary btn-block"> 购买</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="tp/10.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">西瓜</h5>
+                                        <p class="card-text">黑美人西瓜2kg装</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                       <a href="#" class="btn btn-outline-secondary btn-block disabled"> 缺货</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="tp/9.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">香蕉</h5>
+                                        <p class="card-text">美味香蕉5斤装</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block disabled"> 缺货</a>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane-4">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1676047284,1122964652&fm=26&gp=0.jpg" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">美味水果捞</h5>
+                                        <p class="card-text">减肥必备 </p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-block"> 缺货</a>
+                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top" 
+                                    src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F019a3d5e0356b1a80120a895e25d61.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626751760&t=a9a94b3b0759cd6b6f51706ad4477784" alt="card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">实惠水果捞</h5>
+                                        <p class="card-text">实惠就完事了</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                       <a href="#" class="btn btn-outline-secondary btn-block"> 购买</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page navigation实现分页效果,d-flex设置弹性布局 -->
+        <nav aria-label="page navigation">
+            <ul class="pagination d-flex justify-content-center mb-5">
+                <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- 网页尾部 -->
+    <footer class="bg-light trxt-muted py-3">
+        <div class="container">
+            <ul class="list-line text-center">
+                <!-- list-inline-item行内列表 -->
+                <li class="list-inline-item"> Copright&copy; 2021 芭芭农场.All Rights Reserved.</li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-weixin" aria-hidden="true"></i>微信
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-weibo" aria-hidden="true"></i>微博
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">About</a>
+                </li>
+            </ul>
+            <!-- text-center文本居中 -->
+            <p class="text-center"> Made with Bootstrap</p>
+        </div>
+    </footer>
+
+    <!-- 登录modal,bg-primary背景蓝色, text-white文字白色 -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="exampleModalLabel">登录</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">账号</label>
+                    <input type="text" class="form-control" id="exampleuser" placeholder="请输入账号" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">密码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">记住密码</label>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">还没注册账号？注册</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">登录</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- 注册modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="exampleModalLabel">注册</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <svg t="1623673532845" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2516" width="100" height="100"><path d="M722.6 645.295c17.497-26.999 9.793-63.072-17.206-80.567-21.997-14.255-45.104-26.406-69.045-36.377 69.66-51.387 114.937-134.006 114.937-227.013 0-155.467-126.483-281.951-281.951-281.951s-281.951 126.483-281.951 281.951c0 92.95 45.223 175.527 114.811 226.919-51.763 21.557-99.309 53.261-140.153 94.103-82.080 82.080-127.284 191.213-127.284 307.292 0 32.174 26.082 58.254 58.254 58.254s58.254-26.080 58.254-58.254c0-175.385 142.685-318.068 318.068-318.068 61.579 0 121.298 17.606 172.699 50.915 27.002 17.498 63.074 9.793 80.567-17.206zM469.334 135.897c91.225 0 165.442 74.218 165.442 165.442s-74.218 165.442-165.442 165.442c-91.225 0-165.442-74.217-165.442-165.442s74.218-165.442 165.442-165.442z" p-id="2517"></path><path d="M926.63 743.197h-66.992v-66.992c0-32.174-26.080-58.254-58.254-58.254s-58.254 26.080-58.254 58.254v66.992h-66.992c-32.174 0-58.254 26.080-58.254 58.254s26.080 58.254 58.254 58.254h66.992v66.992c0 32.174 26.080 58.254 58.254 58.254s58.254-26.080 58.254-58.254v-66.992h66.992c32.174 0 58.254-26.080 58.254-58.254s-26.080-58.254-58.254-58.254z" p-id="2518"></path></svg>
+                      </div>
+                      <div class="col-md-9">
+                            <h4>注册账号</h4>
+                        <form>
+                            <div class="form-group">
+                                <label>手机</label>
+                                <input type="text" class="form-control" placeholder="请输入手机号">
+                            </div>
+                            <div class="form-group">
+                                <label>验证码</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="输入验证码..">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-success">发送验证码</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group text-center">
+                                <a href="#">忘记密码？</a>
+                            </div>
+                        </form>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">切换到登录</a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">注册</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- 编辑modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                    <button type="button" class="btn btn-danger">save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 删除modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                    <button type="button" class="btn btn-danger">save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/all.js"></script>
+  </body>
+</html>
